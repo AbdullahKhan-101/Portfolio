@@ -15,9 +15,9 @@ const Hero = () => {
           My Personal Portfolio
         </h1>
         <p className="max-w-xl mt-6 text-lg leading-8 w-[95%] sm:w-full text-gray-300">
-          Hi, I'm UsamaMK, I'm a full stack Web Developer. Besides developing
+          {`Hi, I'm Abdullah, I'm a full stack Web Developer. Besides developing
           simple to complex React web apps, I provide modern solutions to web
-          application.
+          application.`}
         </p>
         <button className="px-8 py-2 my-4 mb-5 text-xl font-semibold transition duration-1000 ease-out rounded-full bg-gradient-to-tr hover:from-blue-500 sm:text-2xl hover:to-purple-500 from-purple-500 to-blue-500">
           Download Resume

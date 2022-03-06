@@ -10,11 +10,11 @@ const About = () => {
           About Me
         </h1>
         <p className="max-w-xl mt-6 text-lg leading-8 w-[95%] sm:w-full text-gray-300">
-          I am a self-learned and creative REACT developer having 0 experience
+          {`I am a self-learned and creative REACT developer having 0 experience
           in my field and a passionate Software Engineering student, who's
           always dedicated to his work. I can help you with all the sides of
           your project, verifying good UI/UX design and back-end. I can help you
-          grow/manage your business and ideas.
+          grow/manage your business and ideas.`}
         </p>
         <h1 className="max-w-lg pb-[2px] text-4xl font-semibold md:text-5xl md:pb-1 mt-14 ">
           Technologies
