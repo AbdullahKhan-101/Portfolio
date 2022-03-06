@@ -26,12 +26,17 @@ const Card = () => {
               </p>
             </div>
             <div className="flex justify-between mt-5">
-              <a href="https://amazon-clone-1-one.vercel.app/" target="_blank">
+              <a
+                rel="noreferrer"
+                href="https://amazon-clone-1-one.vercel.app/"
+                target="_blank"
+              >
                 <button className="px-4 py-2 text-lg font-semibold bg-blue-500 rounded-lg hover:bg-blue-600">
                   Live Demo
                 </button>
               </a>
               <a
+                rel="noreferrer"
                 href="https://github.com/abdullahkhan44/amazon-clone"
                 target="_blank"
               >
@@ -66,12 +71,17 @@ const Card = () => {
               </p>
             </div>
             <div className="flex justify-between mt-5">
-              <a href="https://twitter-clone-1.vercel.app/" target="_blank">
+              <a
+                rel="noreferrer"
+                href="https://twitter-clone-1.vercel.app/"
+                target="_blank"
+              >
                 <button className="px-4 py-2 text-lg font-semibold bg-blue-500 rounded-lg hover:bg-blue-600">
                   Live Demo
                 </button>
               </a>
               <a
+                rel="noreferrer"
                 href="https://github.com/abdullahkhan44/twitter-clone"
                 target="_blank"
               >
@@ -106,12 +116,17 @@ const Card = () => {
               </p>
             </div>
             <div className="flex justify-between mt-5">
-              <a href="https://linkedin-clone-c45a2.web.app" target="_blank">
+              <a
+                rel="noreferrer"
+                href="https://linkedin-clone-c45a2.web.app"
+                target="_blank"
+              >
                 <button className="px-4 py-2 text-lg font-semibold bg-blue-500 rounded-lg hover:bg-blue-600">
                   Live Demo
                 </button>
               </a>
               <a
+                rel="noreferrer"
                 href="https://github.com/abdullahkhan44/Linkedin-clone"
                 target="_blank"
               >
@@ -143,6 +158,7 @@ const Card = () => {
             </div>
             <div className="flex justify-between mt-5">
               <a
+                rel="noreferrer"
                 href="https://airbnb-clone-zeta-taupe.vercel.app/"
                 target="_blank"
               >
@@ -151,6 +167,7 @@ const Card = () => {
                 </button>
               </a>
               <a
+                rel="noreferrer"
                 href="https://github.com/abdullahkhan44/airbnb-clone"
                 target="_blank"
               >
@@ -185,12 +202,17 @@ const Card = () => {
               </p>
             </div>
             <div className="flex justify-between mt-5">
-              <a href="https://tesla-clone2022.netlify.app/" target="_blank">
+              <a
+                rel="noreferrer"
+                href="https://tesla-clone2022.netlify.app/"
+                target="_blank"
+              >
                 <button className="px-4 py-2 text-lg font-semibold bg-blue-500 rounded-lg hover:bg-blue-600">
                   Live Demo
                 </button>
               </a>
               <a
+                rel="noreferrer"
                 href="https://github.com/abdullahkhan44/Tesla-clone"
                 target="_blank"
               >

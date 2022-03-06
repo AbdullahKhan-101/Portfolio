@@ -38,19 +38,24 @@ const Header = () => {
         </div>
 
         <div className="flex items-center space-x-[2px] lg:space-x-3">
-          <a href="https://wa.me/923323876075" target="_blank">
+          <a rel="noreferrer" href="https://wa.me/923323876075" target="_blank">
             <WhatsApp className="w-10 text-[#25D366] cursor-pointer h-7 md:hover:-translate-y-1 transition duration-200 ease-out" />
           </a>
           <a
+            rel="noreferrer"
             href="https://www.facebook.com/profile.php?id=100028841142122"
             target="_blank"
           >
             <Facebook className="w-10 text-[#008ad3] cursor-pointer h-6 md:h-7 md:hover:-translate-y-1 transition duration-200 ease-out hidden sm:inline-flex" />
           </a>
-          <a href="" target="_blank">
+          <a rel="noreferrer" href="" target="_blank">
             <LinkedIn className="w-10 text-[#00a0dc] cursor-pointer md:h-7 h-6 md:hover:-translate-y-1 transition duration-200 ease-out" />
           </a>
-          <a target="_blank" href="https://github.com/abdullahkhan44">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/abdullahkhan44"
+          >
             <GitHub className="w-10 text-[#fff]  cursor-pointer md:h-7 h-6 md:hover:-translate-y-1 transition duration-200 ease-out" />
           </a>
 
