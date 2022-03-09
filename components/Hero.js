@@ -1,13 +1,24 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import Particles from "react-tsparticles";
 import Banimation from "./Banimation";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className=" text-white bg-slate-900 bg-opacity-[96%]">
       <Banimation />
-      <div className="max-w-6xl px-2 mx-auto pt-11 md:pt-24">
+      <div
+        data-aos="fade-right"
+        data-aos-delay="400"
+        data-aos-duration="1200"
+        className="max-w-6xl px-2 mx-auto pt-11 md:pt-24"
+      >
         <h1 className="max-w-lg pb-[2px] text-4xl font-semibold md:text-5xl md:pb-1 ">
           Welcome To
         </h1>

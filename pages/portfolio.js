@@ -1,16 +1,16 @@
 import React from "react";
 import Header from "../components/Header";
-import About from "../components/About";
+import Portfolio from "../components/Portfolio";
 import Footer from "../components/Footer";
 
-const about = () => {
+const portfolio = () => {
   return (
     <div>
       <Header />
-      <About />
+      <Portfolio />
       <Footer />
     </div>
   );
 };
 
-export default about;
+export default portfolio;

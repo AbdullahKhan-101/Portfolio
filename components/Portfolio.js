@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Card from "./Card";
-import img1 from "../public/Amazon.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Portfolio = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="text-white bg-slate-900 bg-opacity-[96%]">
       <div className="max-w-6xl px-2 mx-auto pt-11 md:pt-20">
-        <div className="max-w-xl mx-auto">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          className="max-w-xl mx-auto"
+        >
           <h1 className="max-w-xl text-center pb-[2px]  text-4xl font-semibold md:text-5xl md:pb-1 mt-1 ">
             These are my Projects
           </h1>

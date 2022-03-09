@@ -1,17 +1,35 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Menu, MenuIcon, XIcon } from "@heroicons/react/outline";
 import { IconButton } from "@mui/material";
 import { Facebook, LinkedIn, WhatsApp, GitHub } from "@mui/icons-material";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Header = () => {
   const [burgerStatus, setBurgerStatus] = useState(false);
 
+  const router = useRouter();
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="sticky top-0 z-20 shadow-xl bg-slate-900">
-      <main className="flex items-center justify-between max-w-6xl px-1 mx-auto text-white md:py-2 ">
-        <div className="relative h-16 cursor-pointer w-36 md:w-44">
+      <main
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
+        className="flex items-center justify-between max-w-6xl px-1 mx-auto text-white md:py-2 "
+      >
+        <div
+          onClick={() => router.push("/")}
+          className="relative h-16 cursor-pointer w-36 md:w-44"
+        >
           <Image
             src="https://www.pikpng.com/pngl/b/501-5014867_portfolio-logo-png-portfolio-png-clipart.png"
             alt="infoImg"
@@ -26,15 +44,23 @@ const Header = () => {
           } ${!burgerStatus ? "-translate-x-10" : "translate-x-0"}
           `}
         >
-          <p className="p-3 px-6 mt-1 text-xl font-semibold rounded-md cursor-pointer lg:px-8 lg:p-4 hover:bg-slate-700 md:mt-0">
+          <p
+            onClick={() => router.push("/about")}
+            className="p-3 px-6 mt-1 text-xl font-semibold rounded-md cursor-pointer lg:px-8 lg:p-4 hover:bg-slate-700 md:mt-0"
+          >
             About
           </p>
-          <p className="p-3 px-6 text-xl font-semibold rounded-md cursor-pointer lg:p-4 lg:px-8 hover:bg-slate-700 ">
+          <p
+            onClick={() => router.push("/portfolio")}
+            className="p-3 px-6 text-xl font-semibold rounded-md cursor-pointer lg:p-4 lg:px-8 hover:bg-slate-700 "
+          >
             Portfolio
           </p>
-          <p className="p-3 px-6 mb-3 text-xl font-semibold rounded-md cursor-pointer lg:p-4 lg:px-8 hover:bg-slate-700 md:mb-0">
-            Contact
-          </p>
+          <a href="#contact">
+            <p className="p-3 px-6 mb-3 text-xl font-semibold rounded-md cursor-pointer lg:p-4 lg:px-8 hover:bg-slate-700 md:mb-0">
+              Contact
+            </p>
+          </a>
         </div>
 
         <div className="flex items-center ">
@@ -48,13 +74,17 @@ const Header = () => {
           >
             <Facebook className="w-10 ml-2 text-[#008ad3] cursor-pointer h-6 md:h-7 md:hover:-translate-y-1 transition duration-200 ease-out hidden sm:inline-flex" />
           </a>
-          <a rel="noreferrer" href="" target="_blank">
+          <a
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/abdullah-khan-278aa0233/"
+            target="_blank"
+          >
             <LinkedIn className="w-10 ml-2 text-[#00a0dc] cursor-pointer md:h-7 h-6 md:hover:-translate-y-1 transition duration-200 ease-out" />
           </a>
           <a
             target="_blank"
             rel="noreferrer"
-            href="https://github.com/abdullahkhan44"
+            href="https://github.com/AbdullahKhan-101"
           >
             <GitHub className="w-10 ml-2 text-[#fff]  cursor-pointer md:h-7 h-6 md:hover:-translate-y-1 transition duration-200 ease-out" />
           </a>

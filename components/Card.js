@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Card = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="flex flex-wrap mt-16 justify-evenly">
       <>
-        <div className="border overflow-hidden rounded-lg max-w-[325px] flex-grow m-1 sm:m-2 mb-6 sm:mb-8 md:mb-12 border-slate-500 ">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          className="border overflow-hidden rounded-lg max-w-[325px] flex-grow m-1 sm:m-2 mb-6 sm:mb-8 md:mb-12 border-slate-500 "
+        >
           <div className="relative w-full h-48 transition duration-200 ease-out rounded-tr-md rounded-tl-md hover:scale-110 ">
             <Image src="/Amazon.png" objectFit="cover" layout="fill" />
           </div>
@@ -49,7 +60,12 @@ const Card = () => {
         </div>
       </>
       <>
-        <div className="border overflow-hidden rounded-lg max-w-[325px] flex-grow m-1 sm:m-2 mb-6 sm:mb-8 md:mb-12 border-slate-500 ">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          className="border overflow-hidden rounded-lg max-w-[325px] flex-grow m-1 sm:m-2 mb-6 sm:mb-8 md:mb-12 border-slate-500 "
+        >
           <div className="relative w-full h-48 transition duration-200 ease-out rounded-tr-md rounded-tl-md hover:scale-110 ">
             <Image src="/twitter.jpg" objectFit="cover" layout="fill" />
           </div>
@@ -94,7 +110,12 @@ const Card = () => {
         </div>
       </>
       <>
-        <div className="border overflow-hidden rounded-lg max-w-[325px] flex-grow m-1 sm:m-2 mb-6 sm:mb-8 md:mb-12 border-slate-500 ">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          className="border overflow-hidden rounded-lg max-w-[325px] flex-grow m-1 sm:m-2 mb-6 sm:mb-8 md:mb-12 border-slate-500 "
+        >
           <div className="relative w-full h-48 transition duration-200 ease-out rounded-tr-md rounded-tl-md hover:scale-110 ">
             <Image src="/linkedin.png" objectFit="cover" layout="fill" />
           </div>
@@ -139,7 +160,12 @@ const Card = () => {
         </div>
       </>
       <>
-        <div className="border overflow-hidden rounded-lg max-w-[325px] flex-grow m-1 sm:m-2 mb-6 sm:mb-8 md:mb-12 border-slate-500 ">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          className="border overflow-hidden rounded-lg max-w-[325px] flex-grow m-1 sm:m-2 mb-6 sm:mb-8 md:mb-12 border-slate-500 "
+        >
           <div className="relative w-full h-48 transition duration-200 ease-out rounded-tr-md rounded-tl-md hover:scale-110 ">
             <Image src="/airbnb.png" objectFit="cover" layout="fill" />
           </div>
@@ -180,7 +206,12 @@ const Card = () => {
         </div>
       </>
       <>
-        <div className="border overflow-hidden rounded-lg max-w-[325px] flex-grow m-1 sm:m-2 mb-6 sm:mb-8 md:mb-12 border-slate-500 ">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="300"
+          data-aos-duration="1000"
+          className="border overflow-hidden rounded-lg max-w-[325px] flex-grow m-1 sm:m-2 mb-6 sm:mb-8 md:mb-12 border-slate-500 "
+        >
           <div className="relative w-full h-48 transition duration-200 ease-out rounded-tr-md rounded-tl-md hover:scale-110 ">
             <Image src="/tesla.jpg" objectFit="cover" layout="fill" />
           </div>

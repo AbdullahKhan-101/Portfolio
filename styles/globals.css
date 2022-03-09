@@ -12,10 +12,12 @@ body {
 }
 
 a {
+  scroll-behavior: smooth;
   color: inherit;
   text-decoration: none;
 }
 
 * {
+  scroll-behavior: smooth;
   box-sizing: border-box;
 }
